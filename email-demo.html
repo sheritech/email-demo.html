@@ -1,31 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive Email</title>
-  <style>
-    @media screen and (max-width: 600px) {
-      .email-container {
-        width: 100% !important;
-      }
-    }
+  <!--[if mso]>
+  <style type="text/css">
+    body, table, td {font-family: Arial, sans-serif !important;}
   </style>
+  <![endif]-->
 </head>
-<body style="margin:0; padding:0;">
-  <!-- CENTERED CONTAINER -->
-  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+<body style="margin:0; padding:0; font-family:Arial, sans-serif; color:#333; background:#f4f4f4;">
+  <!-- OUTER WRAPPER -->
+  <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#f4f4f4">
     <tr>
-      <td align="center" style="padding:20px 0;">
-        <!-- MAIN TABLE -->
-        <table class="email-container" border="0" cellpadding="0" cellspacing="0" width="600" style="border:1px solid #ddd;">
+      <td align="center" valign="top">
+        <!-- MAIN CONTAINER (600px max) -->
+        <table width="600" border="0" cellpadding="0" cellspacing="0" style="width:100%; max-width:600px;">
           <tr>
-            <td align="center" style="padding:20px; background:#f8f8f8;">
-              <h1 style="color:#ff6b6b;">✨ Your Newsletter</h1>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:20px;">
-              <p>This is a <strong>responsive email template</strong> that works everywhere!</p>
-              <a href="#" style="background:#ff6b6b; color:white; padding:10px 15px; text-decoration:none; display:inline-block;">Click Me</a>
+            <td style="padding:20px 0; text-align:center;">
+              <!-- HEADER -->
+              <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="background:#ff6b6b; padding:20px; color:#ffffff; font-size:24px; font-weight:bold;">
+                    ✨ Your Newsletter
+                  </td>
+                </tr>
+              </table>
+              
+              <!-- CONTENT -->
+              <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+                <tr>
+                  <td style="padding:30px 20px; line-height:1.5;">
+                    <h2 style="color:#ff6b6b; margin-top:0;">This Works Everywhere!</h2>
+                    <p>Tested in Outlook, Gmail, Yahoo and mobile devices.</p>
+                    
+                    <!-- BULLETPROOF BUTTON -->
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td align="center" style="padding:20px 0;">
+                          <table border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                              <td align="center" bgcolor="#ff6b6b" style="border-radius:4px;">
+                                <a href="https://example.com" target="_blank" style="font-size:16px; color:#ffffff; text-decoration:none; padding:12px 25px; display:inline-block; font-weight:bold;">Click Me</a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              
+              <!-- FOOTER -->
+              <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="background:#eeeeee; padding:15px; text-align:center; font-size:12px;">
+                    © 2024 Your Company | <a href="#" style="color:#666666;">Unsubscribe</a>
+                  </td>
+                </tr>
+              </table>
             </td>
           </tr>
         </table>
